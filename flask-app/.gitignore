@@ -1,0 +1,67 @@
+Last login: Sun May 28 01:45:16 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Sumedhas-MacBook-Air:~ Sumedha$ mkdir flask-app
+mkdir: flask-app: File exists
+Sumedhas-MacBook-Air:~ Sumedha$ cd flask-app
+Sumedhas-MacBook-Air:flask-app Sumedha$ 
+Sumedhas-MacBook-Air:flask-app Sumedha$ mkdir ~/.venvs
+mkdir: /Users/Sumedha/.venvs: File exists
+Sumedhas-MacBook-Air:flask-app Sumedha$ python3 -m venv ~/.venvs/flask
+Sumedhas-MacBook-Air:flask-app Sumedha$ source ~/.venvs/flask/bin/activate
+(flask) Sumedhas-MacBook-Air:flask-app Sumedha$ pip install Flask gunicorn
+Requirement already satisfied: Flask in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (2.3.2)
+Requirement already satisfied: gunicorn in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (20.1.0)
+Requirement already satisfied: Werkzeug>=2.3.3 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Flask) (2.3.4)
+Requirement already satisfied: Jinja2>=3.1.2 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Flask) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.1.2 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Flask) (2.1.2)
+Requirement already satisfied: click>=8.1.3 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Flask) (8.1.3)
+Requirement already satisfied: blinker>=1.6.2 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Flask) (1.6.2)
+Requirement already satisfied: setuptools>=3.0 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from gunicorn) (65.5.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (from Jinja2>=3.1.2->Flask) (2.1.2)
+
+[notice] A new release of pip available: 22.3.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+(flask) Sumedhas-MacBook-Air:flask-app Sumedha$ pip install --upgrade pip
+Requirement already satisfied: pip in /Users/Sumedha/.venvs/flask/lib/python3.11/site-packages (22.3.1)
+Collecting pip
+  Downloading pip-23.1.2-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 3.5 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.3.1
+    Uninstalling pip-22.3.1:
+      Successfully uninstalled pip-22.3.1
+Successfully installed pip-23.1.2
+(flask) Sumedhas-MacBook-Air:flask-app Sumedha$ git init
+Initialized empty Git repository in /Users/Sumedha/flask-app/.git/
+(flask) Sumedhas-MacBook-Air:flask-app Sumedha$ git add app.py gunicorn_config.py requirements.txt .gitignore
+fatal: pathspec '.gitignore' did not match any files
+(flask) Sumedhas-MacBook-Air:flask-app Sumedha$ nano .gitignore
+
+  UW PICO 5.09                    File: .gitignore                    Modified  
+
+*.pyc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
